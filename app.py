@@ -24,6 +24,7 @@ meta_tags = [
 # Define our app with stylesheets
 app = Dash(__name__, external_stylesheets = [dbc.themes.BOOTSTRAP, dbc.icons.BOOTSTRAP], meta_tags = meta_tags)
 app.title = "COVID-19 Live Tracker"
+server = app.server
 
 # Read the data
 url_confirmed_global = "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv"
@@ -951,4 +952,4 @@ def country_kpi(country):
         make_map_chart(country_totals_df, zoom, zoom_lat, zoom_long)
         
 if __name__ == '__main__':
-    app.run(debug=False)
+    app.run()
