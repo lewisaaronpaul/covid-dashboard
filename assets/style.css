@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #192444;
+}
+
+#parent {
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
+    /* max-width: 1400px; */
+    margin: 0;
+}
+
+.flex-display {
+    display: flex;
+    /* flex-direction: column; */
+    /* flex-wrap: wrap; */
+
+    /* justify-content: space-between; */
+}
+
+/* All children of flex-display */
+.flex-display > * {
+    flex-basis: 100%;
+}
+
+#title {
+    text-align: center;
+}
+
+#title1 {
+    text-align: center;
+}
+
+.card-container {
+    flex: 1;
+    border-radius: 5px;
+    background-color: #1f2c56;
+    margin: 16px;
+    padding: 15px;
+    position: relative;
+    box-shadow: 2px 2px 2px #1f2c56;
+}
+
+.create-container {
+    flex: 1;
+    border-radius: 5px;
+    background-color: #1f2c56;
+    margin: 5px;
+    padding: 15px;
+    position: relative;
+    box-shadow: 2px 2px 2px #1f2c56;
+}
+
+.create-container-map {
+    border-radius: 5px;
+    background-color: #1f2c56;
+    margin: 10px;
+    padding: 15px;
+    position: relative;
+    box-shadow: 2px 2px 2px #1f2c56;
+}
+
+.fix-label {
+    font-size: 20px;
+    margin: 0;
+    padding: 5px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    width: calc(100%-40px);
+}
+
+/* For the Country Dropdown */
+.dcc-component {
+    margin: 0;
+    padding: 5px;
+    width: calc(100%-40px);
+}
+
+.Select-control, .Select-menu-outer, .Select-multi-value-wrapper, .select-up, .is-open .Select-control {
+    background-color: #1f2c56;
+    color: white;
+}
+
+.Select-control{
+    border: 0.5px solid purple;
+}
+
+.has-value.Select--single>.Select-control .Select-value .Select-value-label, .has-value.is-pseudo-focused.Select--single>.Select-control .Select-value .Select-value-label {
+    color: white;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px !important;
+    display: block !important;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #1f2c56 !important;
+    border-radius: 10px !important;
+    display: block !important;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #192444;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: white !important;
+}
+  
+@media (max-width: 1100px) {
+
+    #card-one, #card-two, #card-three, #card-four {
+        flex: 1 0 40%;
+    }
+
+    #bar-line {
+        flex: 1 0 100%;  
+    }
+
+    navbar {
+        /* width: 100%; */
+        flex: 1 0 100%;
+        margin: 0px !important;
+    }
+
+  }
+
+
